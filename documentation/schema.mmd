@@ -1,0 +1,44 @@
+erDiagram
+    NOTICES }o--|| JUSTIFICATION : hasJustification
+    CONCEPT }o--|| JUSTIFICATION : hasJustification
+    SOURCE }o--|| JUSTIFICATION : hasJustification
+    QUESTION }o--|| JUSTIFICATION : hasJustification
+
+    CONCEPT }o--o{ CONCEPT : "Broader or Narrower or related"
+
+    CONCEPT }o--|| INTERNATIONALISATION : hasInternationalisation
+
+    SOURCE {
+        string id
+        string description
+        string value
+    }
+
+    NOTICES {
+        string id
+        string name
+    }
+
+    QUESTION {
+        string id
+        string name
+    }
+
+    CONCEPT {
+        string id
+        string description
+        string ark
+        string name
+        string note
+        string definition
+        string thesaurus
+    }
+
+    JUSTIFICATION {
+    }
+
+    INTERNATIONALISATION {
+        string id
+        string value
+        string lang
+    }
